@@ -57,9 +57,7 @@
 		007DE1A9278C18FA0074DDA5 /* my_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = my_data.json; sourceTree = "<group>"; };
 		00C1EEF7278D228500CADF99 /* SLNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLNavigationController.swift; sourceTree = "<group>"; };
 		00C1EEF9278D231300CADF99 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
-		6B0F4650EF29A3D75E9220AC /* Pods-SLTabBarDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTabBarDemo.release.xcconfig"; path = "Target Support Files/Pods-SLTabBarDemo/Pods-SLTabBarDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9A6DFE8D7FF0E6CA6F317658 /* Pods_SLTabBarDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLTabBarDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A66772F85F019D421D50D1C7 /* Pods-SLTabBarDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTabBarDemo.debug.xcconfig"; path = "Target Support Files/Pods-SLTabBarDemo/Pods-SLTabBarDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +172,6 @@
 			children = (
 				007DE185278BD9C10074DDA5 /* SLTabBarDemo */,
 				007DE184278BD9C10074DDA5 /* Products */,
-				89243B540C89C02BCD0D1A4B /* Pods */,
 				A4BF859D69BF075C409DAF3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -200,15 +197,6 @@
 				007DE194278BD9C30074DDA5 /* Info.plist */,
 			);
 			path = SLTabBarDemo;
-			sourceTree = "<group>";
-		};
-		89243B540C89C02BCD0D1A4B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A66772F85F019D421D50D1C7 /* Pods-SLTabBarDemo.debug.xcconfig */,
-				6B0F4650EF29A3D75E9220AC /* Pods-SLTabBarDemo.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		A4BF859D69BF075C409DAF3F /* Frameworks */ = {
@@ -497,7 +485,6 @@
 		};
 		007DE198278BD9C30074DDA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A66772F85F019D421D50D1C7 /* Pods-SLTabBarDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -529,7 +516,6 @@
 		};
 		007DE199278BD9C30074DDA5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B0F4650EF29A3D75E9220AC /* Pods-SLTabBarDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
