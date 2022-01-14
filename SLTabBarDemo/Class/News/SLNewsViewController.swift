@@ -13,7 +13,7 @@ class SLNewsViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.red
-        self.navigationItem.title = "kk头条"
+        self.title = "kk头条"
         
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "DoubleClickTabbarItemNotification"), object: nil, queue: OperationQueue.main) { _ in
             print("DoubleClickTabbarItemNotification")

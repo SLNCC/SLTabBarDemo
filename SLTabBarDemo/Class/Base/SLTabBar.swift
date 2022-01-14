@@ -225,13 +225,13 @@ class SLTabBar: UIView {
 }
 
 
+struct SLAssociatedKeys {
+    static var kBadgeValueKey = "kBadgeValueKey"
+    static var kSMViewControllerTitleKey = "kSMViewControllerTitleKey"
+}
+
 //MARK: --添加角标
 extension UITabBarItem {
-    
-    private struct SLAssociatedKeys {
-        static var kBadgeValueKey = "kBadgeValueKey"
-    }
-    
     public var badgeValue: String? {
         set {
             objc_setAssociatedObject(self, &SLAssociatedKeys.kBadgeValueKey, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
@@ -242,4 +242,17 @@ extension UITabBarItem {
         }
     }
     
+}
+
+//MARK: -- title
+extension UIViewController {
+    var title: String? {
+        set {
+            objc_setAssociatedObject(self, &SLAssociatedKeys.kSMViewControllerTitleKey, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC)
+            self.navigationItem.title = newValue
+        }
+        get {
+            return objc_getAssociatedObject(self, &SLAssociatedKeys.kSMViewControllerTitleKey) as? String
+        }
+    }
 }
